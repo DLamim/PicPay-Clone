@@ -2,6 +2,7 @@ package br.com.dlm.picpayclone.mapper;
 
 import br.com.dlm.picpayclone.dto.TransactionDTO;
 import br.com.dlm.picpayclone.model.Transaction;
+import br.com.dlm.picpayclone.service.IUserService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 import org.springframework.beans.factory.annotation.Autowired;

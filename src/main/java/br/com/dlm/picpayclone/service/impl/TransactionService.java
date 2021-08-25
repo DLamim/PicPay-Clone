@@ -4,6 +4,7 @@ import br.com.dlm.picpayclone.dto.TransactionDTO;
 import br.com.dlm.picpayclone.mapper.TransactionMapper;
 import br.com.dlm.picpayclone.model.Transaction;
 import br.com.dlm.picpayclone.service.ITransactionService;
+import br.com.dlm.picpayclone.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,9 @@ public class TransactionService implements ITransactionService {
 
     @Autowired
     private TransactionMapper transactionMapper;
+
+    @Autowired
+    private IUserService iUserService;
 
     @Override
     public TransactionDTO process(TransactionDTO transactionDTO) {

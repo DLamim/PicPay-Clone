@@ -28,7 +28,7 @@ public class TransactionDTO {
     @NotNull
     private Double value;
 
-    private CreditCardDTO creditCardDTO;
+    private CreditCardDTO creditCard;
 
     private Boolean isCreditCard = false;
 }
